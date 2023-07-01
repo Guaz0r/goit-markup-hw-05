@@ -545,7 +545,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.02em;
   color: var(--main-white);
   margin-bottom: 16px;
 }
@@ -555,9 +555,9 @@ body {
   height: 40px;
   border-radius: 4px;
   border: 1px solid var(--main-white);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.48px;
   color: var(--main-white);
   padding-left: 16px;
@@ -802,7 +802,7 @@ body {
   border: 1px solid var(--modal-border);
   background-color: transparent;
   padding-left: 38px;
-  outline: none;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -812,6 +812,7 @@ body {
   left: 16px;
   transform: translateY(-50%);
   fill: var(--main-brandcolor);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-item:focus + .lable-icon {
@@ -838,7 +839,8 @@ body {
   letter-spacing: 0.48px;
   background-color: transparent;
   color: var(--modal-border);
-  outline: none;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment:focus {
